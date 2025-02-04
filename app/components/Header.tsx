@@ -16,7 +16,7 @@ export default function Header() {
 
         {/* Desktop menu */}
         <div className="hidden md:flex gap-6">
-          <Link href="/products" className="hover:text-gray-300 transition-colors">
+          <Link href="/" className="hover:text-gray-300 transition-colors">
             Products
           </Link>
           <Link href="/contact" className="hover:text-gray-300 transition-colors">

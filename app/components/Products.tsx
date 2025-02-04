@@ -36,7 +36,7 @@ const products = [
 export default function Products() {
   return (
     <div>
-      <div className="w-full">
+      <div className="w-full mb-8">
         <video 
           autoPlay 
           loop 
@@ -44,7 +44,7 @@ export default function Products() {
           playsInline
           className="w-full h-[60vh] object-cover"
         >
-          <source src="/assets/dji-drone.mp4" type="video/mp4" />
+          <source src="/assets/drone-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
