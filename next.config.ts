@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
         hostname: "www.dji.com",
       },
     ],
-    domains: ["dji-store"],
+    domains: ["githubusercontent.com"],
   },
 };
 
