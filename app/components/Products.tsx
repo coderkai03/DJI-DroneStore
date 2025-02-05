@@ -44,12 +44,12 @@ export default function Products() {
           playsInline
           className="w-full h-[60vh] object-cover"
         >
-          <source src="/assets/drone-video.mp4" type="video/mp4" />
+          <source src="/assets/drone-montage.mov" type="video/mov" />
           Your browser does not support the video tag.
         </video>
       </div>
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold mb-8">Drones</h2>
+        <h2 className="text-4xl font-bold mb-8">Enterprise Drone Solutions</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />

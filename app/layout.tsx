@@ -3,11 +3,12 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import type React from "react"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "DJI Drone Store",
+  title: "AAQwire",
   description: "Minimalist DJI drone store with an all-black theme",
 }
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-black text-white min-h-screen flex flex-col`}>
         <Header />
         <main className="flex-grow mt-16 md:mt-0">{children}</main>
+        <Footer />
       </body>
     </html>
   )
