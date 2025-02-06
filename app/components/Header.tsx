@@ -8,10 +8,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-gray-900 text-white p-4">
+    <header className="bg-black text-white p-4 fixed top-0 left-0 right-0 z-50">
       <nav className="container mx-auto flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold">
-          AAQwire
+        <Link href="/">
+          <h2 className="text-4xl font-bold">AAQwire</h2>
+          <p className="text-sm font-sans text-gray-500">Delivering Solutions</p>
         </Link>
 
         {/* Desktop menu */}
@@ -35,7 +36,7 @@ export default function Header() {
 
         {/* Mobile menu dropdown */}
         {isMenuOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-gray-900 p-4 md:hidden">
+          <div className="absolute top-16 left-0 right-0 bg-black p-4 md:hidden">
             <div className="flex flex-col gap-4">
               <Link
                 href="/products"

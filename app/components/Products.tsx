@@ -29,7 +29,7 @@ const products = [
     id: 5,
     name: "Avata",
     image: "https://raw.githubusercontent.com/coderkai03/DJI-DroneStore/refs/heads/main/public/assets/dji-drone.png",
-    link: "https://www.dji.com/dji-avata",
+    link: "https://www.dji.com/avata-2",
   },
 ]
 
@@ -39,12 +39,12 @@ export default function Products() {
       <div className="w-full mb-8">
         <video 
           autoPlay 
-          loop 
           muted 
           playsInline
-          className="w-full h-[60vh] object-cover"
+          loop={false}
+          className="w-full aspect-video object-cover"
         >
-          <source src="/assets/drone-montage.mov" type="video/mov" />
+          <source src="/assets/drone-montage.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
