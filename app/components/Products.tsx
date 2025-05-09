@@ -37,14 +37,14 @@ export default function Products() {
   return (
     <div>
       <div className="w-full mb-8">
-        <video 
+        <video
           autoPlay 
           muted 
           playsInline
-          loop={false}
+          loop
           className="w-full aspect-video object-cover"
         >
-          <source src="/assets/drone-montage.mp4" type="video/mp4" />
+          <source src="/assets/aaqwire-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
